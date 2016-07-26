@@ -3,15 +3,8 @@ using System.Collections;
 
 public class PositionCamera : MonoBehaviour
 {
-    public SceneDimensions sceneDimensions;
-
 	void Start ()
     {
-        GetComponent<Camera>().orthographicSize = sceneDimensions.SceneHeight / 2;
+		GetComponent<Camera>().orthographicSize = SceneManager.Instance.SceneHeight / 2;
     }
-
-	void Update () 
-	{
-
-	}
 }
